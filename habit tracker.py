@@ -1,0 +1,51 @@
+# Habit Tracker in Python 
+
+def load_habits():
+    habits = {}
+    try:
+       with open("habits.txt", "r") as f:
+            for line in f:
+                name, status = line.strip().split(",")
+                habits[name] = status
+    except FileNotFoundError:
+        pass
+    return habits
+
+def save_habits(habits):
+    with open("habits.txt", "w") as f:     # this create a seconary file in this folder that have contain habit folders whether the work is done or not
+       for habit, status in habits.items():
+           f.write(f"{habit},{status}\n")
+
+def main():
+    habits = load_habits()
+    while True:
+        print("\n1. View Habits\n2. Add Habit\n3. Mark Habit as done\n4. Exit")
+        choice = input("Choose an option:")
+
+        if choice == "1":
+           for habit, status in habits.items():
+             print(f"{habit}: {'DONE' if status == 'done' else 'NOT DONE YET'}")  # work completed= done  and work not completed= not done 
+
+        elif choice =="2":
+           name = input("Enter your habit name:")
+           habits[name] = "Not done"
+           print(f"Added '{name}' to your habit list.")
+
+        elif choice == "3":
+           name = input("Enter habit name to mark as done: ")
+           if name in habits:
+              habits[name] = "done"
+              print(f"'{name}' marked as completed!")
+           else:
+              print("Habit not found.")
+
+        elif choice == "4":                         # without exit your progress cannot be saved
+          save_habits(habits)
+          print("Progress saved, See you tommorow!")
+          break
+    else:
+        print("Invalid choice, try again.")
+
+# calling the main function
+if __name__ == "__main__":
+   main()
