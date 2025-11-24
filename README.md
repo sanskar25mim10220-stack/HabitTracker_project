@@ -5,6 +5,15 @@ This program allows you to *add habits*, *view habits*, *mark them as done*, and
 
 ---
 
+
+  Table of content
+ 1 features
+ 2 file struture
+ 3 How it work
+ 4 Usage
+
+ 
+---
  Features
 - View Habits: See all your habits and their current status (DONE / NOT DONE YET).
 - Add Habit: Add new habits to your list.
@@ -12,6 +21,7 @@ This program allows you to *add habits*, *view habits*, *mark them as done*, and
 - Save Progress: Automatically saves your habits to `habits.txt` when you exit.
 
 ---
+
 
  File Structure
 - `habit_tracker.py` → Main Python script.
@@ -22,8 +32,6 @@ Example `habits.txt`:
  How It Works
 1. When the program starts, it loads habits from `habits.txt` (if the file exists).
 2. You interact with the menu:
-      
-
 3. Your choices update the habit list in memory.
 4. When you exit, all changes are saved back to `habits.txt`.
 
