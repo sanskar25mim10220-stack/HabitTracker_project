@@ -43,21 +43,61 @@ Uses a loop to continuously interact with the user until they choose to exit.
 
 5. Workflow Diagram
 
-Start
-   ↓
-Load habits from file
-   ↓
-Display menu
-   ↓
-User selects option ────────────────┐
-   ↓                                │
-View habits / Add habit / Mark done │
-   ↓                                │
-Repeat menu until Exit              │
-   ↓                                │
-Save habits to file                 │
-   ↓
-End
+                ┌───────────────────────┐
+                │   Program Starts       │
+                └───────────┬───────────┘
+                            │
+                            ▼
+                ┌───────────────────────┐
+                │   load_habits()        │
+                │   (read habits.txt)    │
+                └───────────┬───────────┘
+                            │
+                            ▼
+                ┌───────────────────────┐
+                │   habits dictionary    │
+                └───────────┬───────────┘
+                            │
+                            ▼
+                ┌───────────────────────────────┐
+                │   Display Menu Options:        │
+                │   1. View Habits               │
+                │   2. Add Habit                 │
+                │   3. Mark Habit as done        │
+                │   4. Exit                      │
+                └───────────┬───────────────────┘
+                            │
+                            ▼
+        ┌───────────────────────────────────────────────┐
+        │ User Choice?                                   │
+        └───────┬───────────────┬───────────────┬───────┘
+                │               │               │
+                ▼               ▼               ▼
+        ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
+        │ Choice = 1  │   │ Choice = 2  │   │ Choice = 3  │
+        │ View Habits │   │ Add Habit   │   │ Mark Done   │
+        └───────┬─────┘   └───────┬─────┘   └───────┬─────┘
+                │                 │                 │
+                ▼                 ▼                 ▼
+        Print all habits   Ask for habit name   Ask for habit name
+        with status        Add to dictionary    If exists → mark "done"
+                           status="Not done"    Else → "Habit not found"
+                │                 │                 │
+                └─────────────────┴─────────────────┘
+                            │
+                            ▼
+                ┌───────────────────────┐
+                │ Choice = 4 (Exit)      │
+                │ save_habits(habits)    │
+                │ Print "Progress saved" │
+                └───────────┬───────────┘
+                            │
+                            ▼
+                ┌───────────────────────┐
+                │   Program Ends         │
+                └───────────────────────┘
+
+
 
 6. Sample Execution
 
