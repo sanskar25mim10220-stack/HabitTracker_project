@@ -12,7 +12,7 @@ def load_habits():
     return habits
 
 def save_habits(habits):
-    with open("habits.txt", "w") as f:     # this create a seconary file in this folder that have contain habit folders whether the work is done or not
+    with open("habits.txt", "w") as f:    
        for habit, status in habits.items():
            f.write(f"{habit},{status}\n")
 
@@ -24,7 +24,7 @@ def main():
 
         if choice == "1":
            for habit, status in habits.items():
-             print(f"{habit}: {'DONE' if status == 'done' else 'NOT DONE YET'}")  # work completed= done  and work not completed= not done 
+             print(f"{habit}: {'DONE' if status == 'done' else 'NOT DONE YET'}") 
 
         elif choice =="2":
            name = input("Enter your habit name:")
@@ -39,7 +39,7 @@ def main():
            else:
               print("Habit not found.")
 
-        elif choice == "4":                         # without exit your progress cannot be saved
+        elif choice == "4":                        
           save_habits(habits)
           print("Progress saved, See you tommorow!")
           break
@@ -48,4 +48,5 @@ def main():
 
 # calling the main function
 if __name__ == "__main__":
+
    main()
