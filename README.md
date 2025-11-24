@@ -6,11 +6,11 @@ This program allows you to *add habits*, *view habits*, *mark them as done*, and
 ---
 
 
-  Table of content
- 1 features
- 2 file struture
- 3 How it work
- 4 Usage
+  Table of content:-
+ 1 features                                                                                                                                               
+ 2 file struture                                                                                                                               
+ 3 How it work                                                                                                                                       
+ 4 Usage                                                                                                                             
 
  
 ---
