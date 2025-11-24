@@ -6,7 +6,7 @@ This program allows you to *add habits*, *view habits*, *mark them as done*, and
 ---
 
 
-  Table of content:-
+  Table of content:-                                                                                                
  1 features                                                                                                                                               
  2 file struture                                                                                                                               
  3 How it work                                                                                                                                       
