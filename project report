@@ -1,0 +1,120 @@
+Project Report: Habit Tracker in Python
+1. Introduction
+The Habit Tracker is a simple command-line application developed in Python to help users monitor their daily habits. It allows users to add habits, view their progress, mark habits as completed, and save their progress to a text file (habits.txt).
+
+This project demonstrates the use of file handling, loops, conditional statements, and basic data structures in Python.
+
+2. Objectives
+To design a lightweight tool for tracking daily habits.
+
+To practice Python concepts such as:
+
+File I/O operations
+
+Dictionaries for data storage
+
+Exception handling
+
+User input and menu-driven programs
+
+To provide a foundation for more advanced habit tracking applications.
+
+3. System Requirements
+Software: Python 3.x
+
+Hardware: Any system capable of running Python scripts
+
+Dependencies: None (uses only built-in Python libraries)
+
+4. Methodology
+The project is implemented using the following modules:
+
+a) load_habits()
+Reads habits from habits.txt.
+
+Stores them in a dictionary with habit names as keys and their status (done / Not done) as values.
+
+Handles missing file errors using FileNotFoundError.
+
+b) save_habits(habits)
+Writes the current habit list to habits.txt.
+
+Ensures persistence of data across sessions.
+
+c) main()
+Provides a menu-driven interface:
+
+View Habits
+
+Add Habit
+
+Mark Habit as Done
+
+Exit (and save progress)
+
+Uses a loop to continuously interact with the user until they choose to exit.
+
+5. Workflow Diagram
+Start
+   ↓
+Load habits from file
+   ↓
+Display menu
+   ↓
+User selects option ────────────────┐
+   ↓                                │
+View habits / Add habit / Mark done │
+   ↓                                │
+Repeat menu until Exit              │
+   ↓                                │
+Save habits to file                 │
+   ↓
+End
+
+6. Sample Execution
+1. View Habits
+2. Add Habit
+3. Mark Habit as done
+4. Exit
+Choose an option: 2
+Enter your habit name: Exercise
+Added 'Exercise' to your habit list.
+
+1. View Habits
+2. Add Habit
+3. Mark Habit as done
+4. Exit
+Choose an option: 3
+Enter habit name to mark as done: Exercise
+'Exercise' marked as completed!
+
+7. Results
+The program successfully tracks habits and saves them in habits.txt.
+
+Example habits.txt after execution:
+
+
+Exercise,done
+Reading,Not done
+Meditation,done
+
+8. Limitations
+Habits can only be marked as done; no option to delete or edit habits.
+
+Progress is saved only when the user exits via option 4.
+
+No date or streak tracking.
+
+9. Future Enhancements
+Add habit deletion and editing functionality.
+
+Track streaks and completion dates.
+
+Provide weekly/monthly progress summaries.
+
+Build a GUI or web-based interface for better usability.
+
+Integrate notifications/reminders.
+
+10. Conclusion
+The Habit Tracker project demonstrates how Python can be used to build a practical, menu-driven application with persistent storage. While simple, it provides a strong foundation for more advanced habit tracking systems and showcases essential programming concepts.
