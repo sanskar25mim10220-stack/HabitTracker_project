@@ -26,7 +26,7 @@ The Habit Tracker is a simple command-line Python application that helps users b
  Steps to Install & Run the Project
 1. Ensure you have **Python 3.x** installed on your system.
    ```bash python --version
-
+https://github.com/sanskar25mim10220-stack/HabitTracker_project/tree/main
 download this repository.
 git clone https://github.com/sanskar25mim10220-stack/habit-tracker.git
 Navigate to the project folder.
