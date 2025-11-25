@@ -28,7 +28,7 @@ The Habit Tracker is a simple command-line Python application that helps users b
    ```bash python --version
 
 download this repository.
-git clone https://github.com/your-username/habit-tracker.git
+git clone https://github.com/sanskar25mim10220-stack/habit-tracker.git
 Navigate to the project folder.
 python habit_tracker.py
 
