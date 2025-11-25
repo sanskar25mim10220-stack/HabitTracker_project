@@ -59,3 +59,9 @@ Screenshots
 
 
 <img width="1893" height="878" alt="Screenshot 2025-11-26 004509" src="https://github.com/user-attachments/assets/19e903f9-df20-445a-8ae5-783b3540475c" />
+
+
+<img width="1868" height="887" alt="Screenshot 2025-11-26 005448" src="https://github.com/user-attachments/assets/7201239a-d187-4ed1-b98a-86d62b30bb15" />
+
+
+<img width="1877" height="888" alt="Screenshot 2025-11-26 005545" src="https://github.com/user-attachments/assets/6c55d5a5-7c04-4f83-8369-682679983b10" />
