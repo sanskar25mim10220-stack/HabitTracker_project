@@ -1,0 +1,81 @@
+Technical Expectations of the Habit Tracker Code
+
+
+1. File Handling
+
+The program uses a text file (habits.txt) for persistence.
+Each line in the file stores a habit in the format:
+
+Code
+habit_name,status
+
+Example:
+
+Code
+Exercise,done
+Reading,Not done
+If the file does not exist, the program starts with an empty habit list (FileNotFoundError is handled gracefully).
+On exit (option 8), all habits are saved back to the file.
+
+
+
+2. Data Structure
+
+Habits are stored in a dictionary:
+
+Key → habit name (string).
+
+Value → status ("done" or "Not done").
+
+This allows fast lookup when marking or deleting habits.
+
+3. Menu Options & Expected Behavior
+
+Option	Functionality	Technical Expectation
+1. View Habits	Displays all habits with their status.	If no habits exist, prints "No habits found.". Otherwise shows each habit with "DONE" or "NOT DONE YET".
+2. Add Habit	Adds a new habit with default status "Not done".	If the habit already exists, it will overwrite the status to "Not done".
+3. Mark Habit as Done	Updates a habit’s status to "done".	If the habit doesn’t exist, prints "Habit not found.".
+5. Delete Habit	Removes a habit from the dictionary.	If the habit doesn’t exist, prints "Habit not found.".
+6. Reset All Habits	Sets all habits back to "Not done".	If no habits exist, prints "No habits to reset.".
+7. Show Progress Percentage	Calculates percentage of completed habits.	If no habits exist, prints "No habits to track yet.".
+   Otherwise shows: Progress: X/Y habits completed (Z%).
+8. Exit	Saves habits to file and exits program.	Ensures persistence of changes.
+4. Error Handling
+FileNotFoundError → handled when loading habits (program starts fresh).
+
+Invalid Menu Choice → prints "Invalid choice, try again.".
+
+Habit Not Found → handled in marking and deleting.
+
+ 
+5. User Interaction
+
+Runs in a continuous loop until the user chooses option 8.
+
+Input is taken via input() → requires manual typing.
+
+Output is printed to the console → simple text interface.
+
+6. Performance Expectations
+Efficient for small to medium habit lists (dictionary lookups are O(1)).
+
+File operations are lightweight (plain text read/write).
+
+Not optimized for very large datasets (e.g., thousands of habits), but perfectly fine for personal use.
+
+7. Limitations
+
+
+No date-based tracking (habits don’t reset automatically each day).
+
+No streak tracking (only “done” vs “not done”).
+
+No duplicate prevention (adding the same habit overwrites status).
+
+File format is plain text, not structured (like JSON/CSV with metadata).
+
+
+
+In summary: This code is a simple, console-based habit tracker that stores habits in a text file,
+lets users add, mark, delete, reset, and view progress. 
+It’s reliable for personal daily use, but limited in advanced features like streaks, scheduling, or analytics.
