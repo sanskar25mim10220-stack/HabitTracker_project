@@ -29,6 +29,8 @@ Value → status ("done" or "Not done").
 
 This allows fast lookup when marking or deleting habits.
 
+
+
 3. Menu Options & Expected Behavior
 
 Option	Functionality	Technical Expectation
@@ -56,12 +58,16 @@ Input is taken via input() → requires manual typing.
 
 Output is printed to the console → simple text interface.
 
+
+
 6. Performance Expectations
 Efficient for small to medium habit lists (dictionary lookups are O(1)).
 
 File operations are lightweight (plain text read/write).
 
 Not optimized for very large datasets (e.g., thousands of habits), but perfectly fine for personal use.
+
+
 
 7. Limitations
 
