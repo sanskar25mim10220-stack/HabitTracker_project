@@ -5,6 +5,7 @@ The Habit Tracker is a simple command-line application developed in Python to he
 It allows users to add habits, view their progress, mark habits as completed, and save their progress to a text file (habits.txt).
 This project demonstrates the use of file handling, loops, conditional statements, and basic data structures in Python.
 
+
 2. Objectives
 
 To design a lightweight tool for tracking daily habits.
