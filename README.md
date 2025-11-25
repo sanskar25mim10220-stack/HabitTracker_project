@@ -58,3 +58,4 @@ Check the habits.txt file to confirm that your changes are saved.
 Screenshots
 
 
+<img width="1893" height="878" alt="Screenshot 2025-11-26 004509" src="https://github.com/user-attachments/assets/19e903f9-df20-445a-8ae5-783b3540475c" />
