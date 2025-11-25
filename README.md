@@ -1,54 +1,60 @@
-Habit Tracker in Python
+📝 Habit Tracker
 
-A simple command-line habit tracker built with Python.  
-This program allows you to *add habits*, *view habits*, *mark them as done*, and *save your progress* to a text file (`habits.txt`).
-
----
+ Overview
+The Habit Tracker is a simple command-line Python application that helps users build and maintain daily habits. It allows you to add habits, mark them as completed, reset progress, and track overall completion percentage. Progress is saved locally in a text file (`habits.txt`) so you can continue where you left off each day.
 
 
-  Table of content:-                                                                                                
- 1 features                                                                                                                                               
- 2 file struture                                                                                                                               
- 3 How it work                                                                                                                                       
- 4 Usage                                                                                                                             
-
- 
----
  Features
-- View Habits: See all your habits and their current status (DONE / NOT DONE YET).
-- Add Habit: Add new habits to your list.
-- Mark Habit as Done: Update the status of a habit once completed.
-- Save Progress: Automatically saves your habits to `habits.txt` when you exit.
+ 
+- View all habits with their current status (done / not done).
+- Add new habits to your list.
+- Mark habits as completed with a timestamp.
+- Delete unwanted habits.
+- Reset all habits to "Not done" for a fresh start.
+- Track progress with completion percentage.
+- Data persistence using a local text file.
 
----
 
+ Technologies/Tools Used
+ 
+- **Python 3.x**
+- **File I/O** for saving and loading habits (`habits.txt`)
+- **Datetime module** for tracking completion timestamps
+- **Command-line interface (CLI)** for user interaction
+- 
 
- File Structure
-- `habit_tracker.py` → Main Python script.
-- `habits.txt` → Text file where habits and their statuses are stored.
+ Steps to Install & Run the Project
+1. Ensure you have **Python 3.x** installed on your system.
+   ```bash python --version
 
-Example `habits.txt`:
-
- How It Works
-1. When the program starts, it loads habits from `habits.txt` (if the file exists).
-2. You interact with the menu:
-3. Your choices update the habit list in memory.
-4. When you exit, all changes are saved back to `habits.txt`.
-
----
-
-Usage
-Run the script in your terminal:
-
-```bash
+download this repository.
+git clone https://github.com/your-username/habit-tracker.git
+Navigate to the project folder.
 python habit_tracker.py
 
 
-1. View Habits
-2. Add Habit
-3. Mark Habit as done
-4. Exit
-Choose an option: 2
-Enter your habit name: Exercise
-Added 'Exercise' to your habit list.
+
+Instructions for Testing
+
+Start the program and choose from the menu options:
+
+Option 1: View all habits.
+
+Option 2: Add a new habit.
+
+Option 3: Mark a habit as done.
+
+Option 5: Delete a habit.
+
+Option 6: Reset all habits.
+
+Option 7: Show progress percentage.
+
+Exit using Option 4 to save your progress.
+
+Check the habits.txt file to confirm that your changes are saved.
+
+
+Screenshots
+
 
